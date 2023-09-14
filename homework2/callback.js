@@ -1,10 +1,10 @@
 //callback Function
-function mySelector(num1, num2, sum, subtract, multiply, division){
-  document.getElementsByTagName('p')[0].innerHTML = `The 2 numbers selected are: ${num1}, and ${num2}`;
-  document.getElementsByTagName('p')[1].innerHTML = `Addition: ${sum} 
-  <br> Subtraction: ${subtract}
-  <br> Multiplication: ${multiply}
-  <br> Division: ${division}`;
+function myAverage(num1, num2, sum, subtract, multiply, division){
+  document.getElementsByTagName('p')[0].innerHTML = `Numbers Chosen: ${num1}, ${num2}`;
+  let total = (sum + subtract + multiply + division);
+  document.getElementsByTagName('p')[1].innerHTML = `Total: ${total}`;
+  let average = total/4;
+  document.getElementsByTagName('p')[2].innerHTML = `Average: ${average}`;
 }
 
 
@@ -17,4 +17,4 @@ function myCalculator(num1, num2, callbackFunction){
   callbackFunction(num1, num2, sum, subtract, multiply, division);
 }
 
-myCalculator(8,50,mySelector);
+myCalculator(4,2,myAverage);
