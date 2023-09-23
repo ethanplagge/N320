@@ -1,0 +1,20 @@
+.wrapper{
+  height: 2500px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} 
+
+.container{
+  height: 300px;
+  width: 300px;
+  background-color: rgb(17, 207, 185);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

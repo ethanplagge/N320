@@ -1,0 +1,28 @@
+.wrapper{
+  height: 1500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#container{
+  height: 100px;
+  width: 375px;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: #bbb;
+  margin-bottom: 20px;
+}
+
+#text{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#author{
+  font-weight: bold;
+  font-style: italic;
+  text-align: end;
+  margin-right: 10px;
+}
