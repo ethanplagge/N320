@@ -1,0 +1,41 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.desc{
+  height: 50px;
+  color: white;
+  background-color: rgb(24, 24, 56);
+  margin-bottom: 10px;
+}
+.catalog{
+  min-height: 250px;
+  width: 650px;
+  background-color: rgb(181, 181, 181);
+  margin-bottom: 25px;
+}
+#item{
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+}
+#total{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#updated-item{
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+}
+#updated-total{
+  margin-left: 10px;
+  margin-top: 5px;
+}
