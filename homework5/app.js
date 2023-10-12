@@ -65,13 +65,20 @@ class Catalog {
   displayCatalog(divId, ...properties){
     //targets the element 
     const catalogDiv = document.getElementById(divId);
+    //cycles through the catalog via a for of loop
     for (const item of this.itemCollection){
+
+      //adds the generic info that applies to all library items
       let itemInfo = `${item.title} - $${item.value}, Published:${item.pubYear} (`;
+
+      //cycles through the unique properties depending on the class type
       for (const property of properties){
         if(item[property] !== undefined){
           itemInfo += ` ${property}: ${item[property]}`;
         }
       }
+
+      //creates the paragraph and adds the information
       const itemInfoDisplay = document.createElement("p");
       itemInfoDisplay.innerHTML = `${itemInfo})`;
       catalogDiv.appendChild(itemInfoDisplay);
