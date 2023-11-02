@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Six</title>
+</head>
+<body>
+  <section id="vueSection">
+    <div class="box" style="border-bottom: 1px solid black;">
+    <h1>{{name}}</h1>
+    <h3>{{course}}: {{assignmentName}}</h3>
+    <p>Date in 7 days: {{printDate()}}</p>
+    <h5 style="font-weight: bold;">Difficulty Rating: {{difficulty}}/5</h5>
+  </div>
+    <h1>List of Fun Crayola Colors</h1>
+    <ul id="list">{{printElements()}}
+    </ul>
+    <br><br>
+    <button v-on:click="favoriteColor">Favorite Color!</button>
+    <p id="favorite">{{favorite}}</p>
+    <label for="">Write a color to add to the list!</label>
+    <br>
+    <input type="text" placeholder="Add to List" v-model="newColor">
+    <br><br>
+    <button @click="addElement">Add {{newColor}} to the List</button>
+    <p>{{test}}</p>
+  </section>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

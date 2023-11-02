@@ -11,7 +11,25 @@
   <section id="myGoals">
     <p>{{courseGoal1}}</p>
     <p>{{courseGoal2}}</p>
-    <p></p>
+    <!--These are called directories, they are pretty cool-->
+    <p v-html = "courseGoal3"></p>
+    <!--You can't just use Vue to add stuff like links,
+      you can only use it in HTML tags-->
+    <!--<p><a href="{{vueLink}}">Vue</a></p>-->
+    <p><a :href="vueLink">Vue</a> Resource</p>
+    <p>My goals: {{newGoal()}}</p>
+    <button v-on:click="addNum(2)">Add</button>
+    <button v-on:click="counter--">Remove</button>
+    <p>Count: {{counter}}</p>
+    <input type="text" v-model="name">
+    <p>{{fullName}}</p>
+    <p>Name Length: {{nameData[0]}}</p>
+    <p>Middle Character: {{nameData[1]}}</p>
+    <!--v-on shortcut: @ - -  v-bind shortcut: : -->
+    <form @:submit.prevent="submitForm">
+      <input v-on:keyup.space="consoleMe" type="text">
+      <button>Sign Up</button>
+    </form>
   </section>
   <script src="app.js"></script>
 </body>
